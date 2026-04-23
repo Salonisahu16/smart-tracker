@@ -43,7 +43,7 @@ function Dashboard() {
 
     const saveSession = useCallback(async () => {
         await axios.post(
-            "http://localhost:5000/api/session/add",
+            "https://smart-tracker-backend-9ke9.onrender.com/api/session/add",
             { duration: time },
             { headers: { Authorization: token } }
         )
@@ -161,7 +161,7 @@ function Dashboard() {
     }
     const deleteSession = async (id) => {
         await axios.delete(
-            `http://localhost:5000/api/session/${id}`,
+            `https://smart-tracker-backend-9ke9.onrender.com/api/session/${id}`,
             { headers: { Authorization: token } }
         )
 
@@ -234,7 +234,7 @@ function Dashboard() {
     }
     const updateSession = async (id) => {
         await axios.put(
-            `http://localhost:5000/api/session/${id}`,
+            `https://smart-tracker-backend-9ke9.onrender.com/api/session/${id}`,
             { duration: editValue },
             { headers: { Authorization: token } }
         )

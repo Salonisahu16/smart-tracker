@@ -36,7 +36,7 @@ function Register() {
         }
 
         try {
-            await axios.post("http://localhost:5000/api/auth/register", {
+            await axios.post("https://smart-tracker-backend-9ke9.onrender.com/api/auth/register", {
                 email, password
             })
 
